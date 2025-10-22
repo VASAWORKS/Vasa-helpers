@@ -1,0 +1,15 @@
+{
+  "library": {
+    "name": "404's amazing library",
+    "components": [
+      "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
+    ]
+  },
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1761148649273,
+      "version": "1.8.46"
+    }
+  }
+}
