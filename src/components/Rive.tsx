@@ -41,7 +41,6 @@ export const Rive = ({
     (async () => {
       gsap
         .timeline({
-          yoyo: true,
           repeat: -1,
         })
         .to(loadingSpinner.current, {
