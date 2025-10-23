@@ -1,9 +1,11 @@
 {
   "library": {
-    "name": "404's amazing library",
+    "name": "VASA HELPERS",
     "components": [
       "./src/**/*.webflow.@(js|jsx|mjs|ts|tsx)"
-    ]
+    ],
+    "description": " A set of useful React components that can be used in Webflow and React.js, built by VASA",
+    "id": "vasa-helpers"
   },
   "telemetry": {
     "global": {
