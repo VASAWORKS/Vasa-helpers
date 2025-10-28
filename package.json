@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@rive-app/canvas": "^2.31.6",
-    "@webflow/data-types": "^1.0.1",
-    "@webflow/react": "^1.0.1",
-    "@webflow/webflow-cli": "^1.8.46",
+    "@webflow/data-types": "^1.0.2",
+    "@webflow/react": "^1.0.2",
+    "@webflow/webflow-cli": "^1.8.47",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

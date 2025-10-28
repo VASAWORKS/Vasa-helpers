@@ -8,7 +8,12 @@ function App() {
         width: '20rem',
         height: '20rem',
       }}>
-        <Rive src='https://cdn.rive.app/animations/vehicles.riv' stateMachine='bumpy' autoPlay={true} startOnView={true} fit='Cover' />
+        <Rive 
+        src='https://cdn.rive.app/animations/vehicles.riv'
+         stateMachine='bumpy' autoPlay={true}
+          startOnView={false}
+           fit='Cover'
+            />
       </div>
     </>
   );

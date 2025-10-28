@@ -29,7 +29,7 @@ export default declareComponent(Rive, {
     }),
     startOnView: props.Boolean({
       name: 'Start on View',
-      defaultValue: true,
+      defaultValue: false,
       tooltip: 'Whether the animation should when the component is in view',
     }),
     fontSource: props.Text({
@@ -46,6 +46,11 @@ export default declareComponent(Rive, {
       name: 'State Machine',
       defaultValue: 'State Machine 1',
       tooltip: 'The state machine of the animation',
+    }),
+    showLoadingSpinner: props.Boolean({
+      name: 'Show Loading Spinner',
+      defaultValue: true,
+      tooltip: 'Whether to show the loading spinner',
     }),
   },
 });
