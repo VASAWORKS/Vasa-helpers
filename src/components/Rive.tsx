@@ -3,6 +3,12 @@ import type * as rive from '@rive-app/canvas/rive';
 import { isInViewport } from '../utils';
 import './Rive.css';
 
+declare global {
+  interface Window {
+    riveFonts?: Record<string, any>;
+  }
+}
+
 type RiveProps = {
   src: string;
   autoPlay?: boolean;
@@ -60,7 +66,12 @@ export const Rive = ({
 
         // Fetchin rive fonts
         if (fontSource) {
-          if (!window.riveFonts[fontSource]) {
+          if (!window.riveFonts) {
+            window.riveFonts = {};
+          }
+
+          if (!window.riveFonts?.[fontSource]) {
+            console.info('Fetching font: ', fontSource);
             const fontResponse = await fetch(fontSource);
             if (!fontResponse.ok) {
               setError('Failed to fetch font');
